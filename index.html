@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-line">           
+            <div class="header-lile-1">
+                <button style="
+                size: 30px;
+                color: rgb(246, 247, 246);
+                margin-left: 5px;
+                margin-right: 5px;
+                background-color: transparent;
+                border: none;
+                "class="material-symbols-outlined">more_horiz</button>
+                <button style="
+                color: rgba(248, 250, 248, 0.833);
+                margin-left: 5px;
+                background-color: transparent;
+                border: none;
+                " class="material-symbols-outlined">arrow_back_ios</button>
+                <button style="
+                color: rgba(223, 228, 223, 0.458);
+                background-color: transparent;
+                border: none;
+                margin-left: 5px;
+                " class="material-symbols-outlined">arrow_forward_ios</button>
+                  
+            </div>
+            <div class="header-line-2">
+                <div class="home">
+                    <i class="material-symbols-outlined">home</i>
+                </div>
+                <div class="search-bar">
+                    <input class="search" id="search_box" type="text" placeholder="What do you want to play?">
+                    <button onclick="search()" style="
+                    background-color: rgb(38, 36, 36);
+                    border: none;
+                    color: white; 
+                    border-radius: 50%;"
+                    class="material-symbols-outlined">search</button>
+                </div>
+                
+            
+            </div>
+            <div class="header-line-3">
+                <span class="explore-premium">Explore   Premium</span>
+                <span style="color: rgb(222, 227, 222);"
+                class="material-symbols-outlined">notifications</span>
+                <span style="color: rgb(222, 227, 222);"
+                class="material-symbols-outlined">groups</span>
+                <span class="profile">S</span>
+                <span style="font-style: italic;"
+                class="material-symbols-outlined">remove</span>
+                <span class="material-symbols-outlined">crop_7_5</span>
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="side-bar">
+            <div class="side-bar-1">
+                <i style="size: 25px;" class="material-symbols-outlined">book_5</i>
+                <i style="
+                width:35px;
+                height: 35px;
+                border: none;
+                border-radius: 50%;
+                background-color: rgb(36, 34, 34);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5px;" 
+                class="material-symbols-outlined">add</i>
+                <span style="
+                width: 68%;
+                height: 49px;
+                color: white;
+                background-color: rgb(249, 75, 220);
+                box-shadow: inset -5px -5px 20px rgb(228, 2, 2);
+                border-radius: 5px;
+                border:none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                "
+                class="material-symbols-outlined">favorite</span>
+            </div>
+            <div class="side-bar-2">
+                
+                <a href="https://open.spotify.com/artist/1dVygo6tRFXC8CSWURQJq2" target="_blank">
+                        <img 
+                        style="width: 52px;
+                        height: 52px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-left: 10px;
+                        margin-top: -10px;"
+                        src="https://liveindia.tv/wp-content/uploads/2025/04/Mistaken-identity.jpg">
+                </a>
+                <a href="https://open.spotify.com/artist/0oOet2f43PA68X5RxKobEy" target="_blank">
+                    <img 
+                    style="
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 10px;
+                    margin-top: 17px;"
+                    src="https://www.hindustantimes.com/ht-img/img/2024/08/31/550x309/PTI10-17-2023-000299A-0_1697603756995_1725094286871.jpg">
+                </a>
+                <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank">
+                    <img 
+                    style="width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 10px;
+                    margin-top: 17px;"
+                    src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7" alt="Arijit Singh">
+                </a>
+                <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx" target="_blank">
+                    <img 
+                    style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 10px;
+                    margin-top: 17px;"
+                    src="https://dailytimes.com.pk/assets/uploads/2019/01/20/maxresdefault-1.jpg">
+                </a>
+            </div>
+        </div>
+                   <!--side-bar  ends here!-->
+
+
+        <div style="margin-top: 65px;" class="main-content">
+            <div class="menu">
+                <button class="all">All</button>
+                <button class="music">Music</button>
+                <button class="pod">Podcasts</button>
+            </div>
+                                         <!--container play button-->
+            <div class="container">
+                <a style="text-decoration: none;" href="https://open.spotify.com/track/71TviT2jdZnp2758ljwREX" target="_blank">
+                    <div class="box">
+                        <img  class="song-img" src="https://i.ytimg.com/vi/N57zVA-cRUM/maxresdefault.jpg">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3>Suniyo</h3>
+                            <p style="margin-top: -20px;"><b>By Sonu Nigam</b></p>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/playlist/37i9dQZF1DXdpQPPZq3F7n" target="_blank">
+                    <div class="box">
+                        <img  class="song-img" src="https://images.firstpost.com/uploads/2023/08/Collage-Maker-31-Jul-2023-09-18-AM-4270.jpg?im=FitAndFill=(1200,675)">
+                        <div class="play-button-container">▶</div>
+                        
+                        <div class="song-details">
+                            <h4><b>Bollywood Mush!</b></h4>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/album/6bT5yCREYNvsTArSUGqrOl" target="_blank">
+                    <div class="box">
+                        <img class="song-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnmTlYwrnuI-urAeotaXtd-_B3IIAXQV2aA&s">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3><b>Rainy Monsoon💕</b></h3>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" target="_blank">
+                    <div class="box">
+                        <img  class="song-img" src="https://i.ytimg.com/vi/C4FYbDTf2Kg/maxresdefault.jpg">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h2><b></b>Arijit Singh</h2>
+                        </div>
+                    </div>
+                </a\>
+                <a style="text-decoration: none;" href="https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM" target="_blank">
+                    <div class="box">
+                        <img class="song-img" src="https://i.ytimg.com/vi/tA3Cv-rYcy4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAjMUvtF6VbflpdqGMBmIx73uAlyw">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3><b></b>Hot Hindi Hits🔥</h3>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/7mUjIbR3aQsgphNuc05l8Q" target="_blank">
+                    <div class="box">
+                        <img  class="song-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRG-AEOpymMXwGkP-jBJYHVOtzeABHTyLbMg&s">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3>Gopon Premika</h3>
+                            <h5 style="margin-top: -17px;">Talpatar Shepai</b></h5>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/album/3RZxrS2dDZlbsYtMRM89v8" target="_blank">
+                    <div class="box">
+                        <img class="song-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprzBQzEM5MTJ39REZKcjJ4TtIHhJizorR4Q&s">
+                        <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3><b>Rockstar</b></h3>
+                        </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/album/6Te86jExHl3hvoCLic3GJZ" target="_blank">
+                    <div class="box">
+                    <img class="song-img" src="https://s2.dmcdn.net/v/U_MSh1aXiGIaqIqqO/x720">
+                    <div class="play-button-container">▶</div>
+                        <div class="song-details">
+                            <h3><b>Hits of 60s & 70s</b></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="suggestions-heading">
+                <span>
+                    <p style="
+                    font-size: 13px;
+                    color: rgba(137, 136, 136, 0.93);"
+                    >Made for</p>
+                    <h2 style="
+                    margin-top: -9px;
+                    color: white;
+                    font-size: 27px;"
+                    >You</h2>
+                </span>
+                <span style="color: rgba(255, 255, 255, 0.547);
+                font-size: 13px;
+                margin-top: 42px;"
+                >Show All</span>
+            </div>
+
+
+                <!--made for you flex box-row-->
+                                                                               <!--made for u play button-->
+            <div class="madeforu-flex-box">
+                <a style="text-decoration: none;" href="https://open.spotify.com/playlist/37i9dQZEVXcQ9COmYvdajy" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb-W7k_LV5L4NOhjOpJFMRi2oMeIBw3WpyiA&s">
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/playlist/37i9dQZF1E3a8N3O6JQo9s" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/1/ab6761610000e5eb9e528993a2820267b97f6aae/en">
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlNgsaNWeabVkDYJ-MqhnWfE-q6dtPiiu_Ig&s"> 
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/3/ab6761610000e5eb4293385d324db8558179afd9/en">
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/6MDME20pz9RveH9rEXvrOM" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/4/ab6761610000e5eb70d80b8ab8e193aef64223ec/en">
+                    
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/5/ab6761610000e5eb69ecfa7557856564c968640d/en">
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/6/ab6761610000e5ebad85a585103dfc2f3439119a/en">
+                    <div class="play-button-madeforu">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5ebc7145b9565b4ebe8b0e50b79/en">
+                </a>
+                <a style="text-decoration: none;" href="" target="_blank">
+                    <img style="position: relative;" class="playlists" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPn6u6qzhNh62hFT30h-4ESYRhZUddt1A_w&s">
+                </a>                   
+            </div>
+            <div class="captions">
+                <span class="cap">Your shortcut to hidden 
+                    gems,deep cuts and.
+                </span>
+                <span class="cap">Weekend's Blinding Lights 
+                    Starboy,Save Your Tears.
+                </span>
+                <span class="cap">Tailor Swift's Shake It Off,
+                    Love Story,Fortnight,Lover.
+                </span>
+                <span class="cap">Drake's God's Plan,Hotline
+                    Bling,One Dance,Nonstop.
+                </span>
+                <span class="cap">Clean Bandits' Rather Be,
+                    Solo,Rockabye,Symphony.
+                </span>
+                <span class="cap">Imagine Dragons's Demons,
+                    Believer,Thunder,Whatever.
+                </span>
+                <span class="cap">Hozier's From Eden,Cherry
+                    White,Take Me To Church.
+                </span>
+                <span class="cap">Catch all the latest music
+                    from the artist you follow.
+                </span>
+                <span class="cap">Spotify adds more according
+                     to your listinings!
+                </span>
+            </div>
+
+            <div class="jumpbackin">
+                <span>
+                    <h2 style="
+                    margin-top: -5px;
+                    color: white;
+                    font-size: 27px;"
+                    >Jump back in</h2>
+                </span>
+                <span style="color: rgba(225, 225, 225, 0.611);
+                font-size: 13px;
+                margin-top: 10px;"
+                >Show All</span>
+            </div>
+                                                                              <!--jumpbackin ply button-->
+            <div class="jumpbackin-playlist">
+                <a style="text-decoration: none; position: relative;" href="https://open.spotify.com/album/4WrgiTUgzzkJcyGv9yyd67" target="_blank">
+                    <img class="jumpbackin-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6dUpRww1wmAbY4fxXDUrjmeWcYejfccciQg&s">
+                    <div class="play-button-jumpbackin">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/album/3RZxrS2dDZlbsYtMRM89v8" target="_blank">
+                    <img class="jumpbackin-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWxU-hFnQ3RChs9JZfa9-LNNPCTu6XB2Hvw&s">
+                    <div class="play-button-jumpbackin">▶</div>
+                </a>
+                <a style="text-decoration: none; position: relative;" href="https://open.spotify.com/album/24C47633GRlozws7WBth7t" target="_blank">
+                    <img class="jumpbackin-img" src="https://i.scdn.co/image/ab67616d00001e02a00249b8bf77312ec156dd4b">
+                    <div class="play-button-jumpbackin">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/album/5XfOSDomcrv4lDvlrxknlt" target="_blank">
+                    <img class="jumpbackin-img" src="https://i.scdn.co/image/ab67616d0000b2734a00b4392365a753c201bd75">
+                    <div class="play-button-jumpbackin">▶</div>
+                </a>
+                <a style="text-decoration: none;" href="https://open.spotify.com/track/2b0XmbDKvaOaFxyIhZ2hyy" target="_blank">
+                    <img class="jumpbackin-img" src="https://i.scdn.co/image/ab67616d00001e02fe841eef499c6933add94d57">
+                    <div class="play-button-jumpbackin">▶</div>
+                </a>
+            </div>
+
+            <div class="jumpbackin-captoins">
+                <span class="cap">
+                    <h3 style="color: white; margin-top: 3px; margin-bottom: -8px;">
+                        Srikanto
+                    </h3>
+                    <p>O Radhe Radhe,Amaake Nao, 
+                        Alote Chol,Pabo Ki Pabo 
+                    </p>
+                </span>
+                <span class="cap">
+                    <h3 style="color: white; margin-top: 3px; margin-bottom: -8px;">
+                        Rockstar
+                    </h3>
+                    <p>Tum Ho,Nadan Parinde,Kun Faya Kun,
+                        Sadda Haq,Phir Se 
+                    </p>
+                </span>
+                <span class="cap">
+                    <h3 style="color: white; margin-top: 3px; margin-bottom: -8px;">
+                        Raanjhanaa  
+                    </h3>
+                    <p>Raanjhanaa,Tum Tak,Piya 
+                        Milenge,Banarasiya
+                    </p>
+                </span>
+                <span class="cap">
+                    <h3 style="color: white; margin-top: 3px; margin-bottom: -8px;">
+                        Ae Dil Hai Muskil
+                    </h3>
+                    <p>Channa Mereya,CutiePie,Ae Dil
+                        Hai Muskil,The Breakeup 
+                    </p>
+                </span>
+                <span class="cap">
+                    <h3 style="color: white; margin-top: 3px; margin-bottom: -8px;">
+                        Sarukh Khan Special
+                    </h3>
+                    <p>Dil Wale Dulhaniya Le Jayenge,
+                        Dil Se,Chaleya
+                    </p>
+                </span>
+            </div>
+
+
+
+            <!--main content ends here-->
+        </div>
+    </main>
+    <!--some short JavaScriptS-->
+    <script src="script.js"></script>
+</body>
+</html>
